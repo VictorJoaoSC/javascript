@@ -11,11 +11,11 @@ var controlador = new NegociacaoController();
 
 document.querySelector('.form').addEventListener('submit',function(event){
 
+    event.preventDefault()
 
     console.log('submits')
 
-    controlador.adiciona    .bind(controlador);
+    controlador.adiciona(event);
 
     console.log('passei!')
-
 });

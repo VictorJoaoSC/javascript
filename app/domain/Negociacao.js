@@ -11,7 +11,7 @@ class Negociacao{
 
     //Propriedade Objetos literais(Atalho de declaração de propriedades)
    constructor(_data,_quantidade,_valor){
-       Object.assign(this,{_data:new Date(),_quantidade,_valor})
+       Object.assign(this,{_quantidade,_valor})
 
        Object.freeze(this);
    }
